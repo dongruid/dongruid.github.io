@@ -11,23 +11,24 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Neural Computation and Machine Learning, Carnegie Mellon University, 2028 (expected)
+* B.S. with honors in Physics, Xi'an Jiaotong University, 2022
+Before transferring to CMU with my advisor, I studied at Rice University for one year.
+I spend a semester as a visiting student during my last college year at Columbia University.
 
-Work experience
+Research Experience
 ======
-* Spring 2024: Academic Pages Collaborator
+* Geometry of Neural Codes
   * Github University
   * Duties includes: Updates and improvements to template
   * Supervisor: The Users
 
-* Fall 2015: Research Assistant
+* Emergent Geometry in the Visual Cortex
   * Github University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
 
-* Summer 2015: Research Assistant
+* Psychophysics
   * Github University
   * Duties included: Tagging issues
   * Supervisor: Professor Git
@@ -35,11 +36,11 @@ Work experience
 Skills
 ======
 * Skill 1
-* Skill 2
+* Programmings: 
   * Sub-skill 2.1
   * Sub-skill 2.2
   * Sub-skill 2.3
-* Skill 3
+* Langrages: English (fluent), Mandarin Chinese (native), Japanese (bilingual), German (elementary)
 
 Publications
 ======
@@ -52,6 +53,10 @@ Talks
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
+
+Leadership and Service
+======
+* Currently signed in to 43 different slack teams
   
 Teaching
 ======
@@ -59,6 +64,3 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
