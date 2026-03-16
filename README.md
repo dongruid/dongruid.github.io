@@ -131,6 +131,53 @@ git push -u origin main
 2. Upload to repository root (same folder as index.html)
 3. The image will automatically appear on your home page!
 
+## 🔧 How to Modify Files After Upload
+
+### Method 1: Edit Directly on GitHub (Easiest)
+
+1. **Go to your repository** on GitHub.com
+2. **Navigate to the file** you want to edit (e.g., click on `cv.html`)
+3. **Click the pencil icon** (✏️ Edit this file) in the top-right corner
+4. **Make your changes** in the editor
+5. **Scroll down** to "Commit changes"
+6. **Add a commit message** (e.g., "Update CV with new publication")
+7. **Click "Commit changes"**
+8. **Wait 1-2 minutes** for GitHub Pages to rebuild
+9. **Refresh your website** to see the changes
+
+### Method 2: Upload New Version of File
+
+1. **Edit the file** on your computer
+2. **Go to your repository** on GitHub
+3. **Click on the file** you want to replace
+4. **Click the trash icon** (🗑️) to delete the old version
+5. **Commit the deletion**
+6. **Click "Add file"** → **Upload files**
+7. **Upload your edited file**
+8. **Commit changes**
+
+### Method 3: Using Git Command Line
+
+If you have Git installed:
+
+```bash
+# Make changes to files on your computer
+# Then:
+
+git add .                          # Stage all changes
+git commit -m "Update CV section"  # Commit with message
+git push                           # Push to GitHub
+```
+
+### Quick Tips:
+
+- **Small changes**: Use Method 1 (edit directly on GitHub)
+- **Multiple files**: Use Method 2 or 3
+- **Regular updates**: Learn Method 3 for efficiency
+- **Changes take effect**: Usually within 1-2 minutes
+
+---
+
 ## 📝 Customization Guide
 
 ### Update Personal Information
@@ -363,6 +410,64 @@ CV page is optimized for printing:
 - Navigation and language switcher hidden
 - Clean black & white layout
 - Proper page breaks
+
+## 🔍 Common Editing Scenarios
+
+### Scenario 1: Add a New Publication
+
+**File to edit:** `cv.html`
+
+1. Find the "Publications" section
+2. Copy an existing publication `<div class="cv-item">` block
+3. Paste it and update with your new publication details
+4. Save and commit
+
+### Scenario 2: Update Research Description
+
+**File to edit:** `research.html` or `cv.html`
+
+1. Navigate to the Research Interests or Research Experience section
+2. Click edit (✏️)
+3. Modify the text inside `<p>` tags
+4. Save and commit
+
+### Scenario 3: Add a Blog Post
+
+**Files to edit:** 
+1. Create new file: `blog-post-title.html` (copy structure from `blogs.html`)
+2. Edit: `blogs.html` to add link to your new post
+
+### Scenario 4: Change Colors
+
+**File to edit:** `style.css`
+
+1. Find the `:root` section (lines 9-16)
+2. Change color hex codes:
+   ```css
+   --primary-color: #0A2158;      /* Your navy blue */
+   --secondary-color: #B9D9EB;    /* Your light blue */
+   ```
+3. Save and commit
+
+### Scenario 5: Update Contact Information
+
+**File to edit:** `index.html` and `cv.html`
+
+1. Search for your email address
+2. Replace with new information
+3. Update in both files for consistency
+
+---
+
+## ⚠️ Important Reminders When Editing
+
+1. **Always backup**: Download a copy before making major changes
+2. **Test locally**: If possible, open HTML files in browser before uploading
+3. **Check syntax**: Missing `<` `>` or `"` can break the page
+4. **Consistent style**: Keep formatting consistent with existing content
+5. **Commit messages**: Use descriptive messages like "Add ICLR 2025 paper" not "update"
+
+---
 
 ## 🐛 Troubleshooting
 
